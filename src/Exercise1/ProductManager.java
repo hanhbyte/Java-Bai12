@@ -39,12 +39,12 @@ public class ProductManager {
         }
     }
 
-    public String searchByName(String name){
+    public Product searchByName(String name){
         for (int i = 0; i < listProducts.size(); i++) {
             if (listProducts.get(i).equals(name))
-                return listProducts.get(i).toString();
+                return listProducts.get(i);
         }
-        return "";
+        return null;
     }
 
     public void sortUp(){
